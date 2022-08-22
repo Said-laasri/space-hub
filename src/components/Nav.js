@@ -1,16 +1,17 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
+import './Nav.css';
 
 function Nav() {
   return (
-    <div>
+    <div className="links d-flex">
       <Link to="Rockets" className="reckets">
         Rockets
       </Link>
       <Link to="/" className="missions">
         Missions
       </Link>
-      <Link to="Pyprofile" className="profile">
+      <Link to="Myprofile" className="profile">
         My Profile
       </Link>
     </div>

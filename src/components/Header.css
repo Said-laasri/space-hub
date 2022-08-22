@@ -1,0 +1,15 @@
+.header {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo-container {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.logo {
+  width: 5rem;
+  height: 5rem;
+  margin-left: -10rem;
+}

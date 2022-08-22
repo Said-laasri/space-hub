@@ -1,11 +1,14 @@
 import Nav from './Nav';
 import planet from '../images/planet.png';
+import './Header.css';
 
 function Header() {
   return (
-    <div>
-      <img src={planet} alt="universe" />
-      <h1>Space Travelers Hub</h1>
+    <div className="header d-flex">
+      <div className="logo-container d-flex">
+        <img className="logo" src={planet} alt="universe" />
+        <h1>Space Travelers Hub</h1>
+      </div>
       <Nav />
     </div>
   );
