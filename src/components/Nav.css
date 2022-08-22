@@ -1,0 +1,10 @@
+.links {
+  width: 15rem;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+
+.links:nth-child(-n + 3) {
+  text-decoration: none;
+}
