@@ -1,45 +1,27 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import Table from 'react-bootstrap/Table';
-import Button from 'react-bootstrap/Button';
+import { getMission } from '../redux/missions';
 import MissionOne from '../missionOne';
 
 function Missions() {
+  const dispatch = useDispatch();
+  const missions = useSelector((state) => state.mission);
+
+  useEffect(() => {
+    dispatch(getMission());
+  }, [dispatch]);
+
   return (
     <Table striped bordered hover size="lg">
-      <thead>
-        <tr>
-          <th>Mission</th>
-          <th>Description</th>
-          <th>Status</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Thaicom</td>
-          <td>Otto</td>
-          <div className="col-md-4">
-            <tr>
-              <Button variant="primary">NOT A MEMBER</Button>
-              {' '}
-              <Button variant="outline-secondary">Join Mission</Button>
-              {' '}
-            </tr>
-          </div>
-        </tr>
-        <tr>
-          <td>Telstar</td>
-          <td>Otto</td>
-          <div className="col-md-4">
-            <tr>
-              <Button variant="primary">NOT A MEMBER</Button>
-              {' '}
-              <Button variant="outline-secondary">Join Mission</Button>
-              {' '}
-            </tr>
-          </div>
-        </tr>
-      </tbody>
+      {missions.map((mission) => (
+        <MissionOne
+          key={mission.id}
+          id={mission.id}
+          name={mission.name}
+          description={mission.description}
+        />
+      ))}
     </Table>
   );
 }
