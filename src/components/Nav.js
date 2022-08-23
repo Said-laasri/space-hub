@@ -5,10 +5,10 @@ import './Nav.css';
 function Nav() {
   return (
     <div className="links d-flex">
-      <Link to="Rockets" className="reckets">
+      <Link to="/" className="reckets">
         Rockets
       </Link>
-      <Link to="/" className="missions">
+      <Link to="Mission" className="missions">
         Missions
       </Link>
       <Link to="Myprofile" className="profile">
