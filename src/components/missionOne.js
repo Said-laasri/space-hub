@@ -2,7 +2,7 @@ import { useDispatch } from 'react-redux';
 import { PropTypes } from 'prop-types';
 import React from 'react';
 import Button from 'react-bootstrap/Button';
-import { joinMission, leaveMission } from './redux/missions';
+import { ToggleMission } from './redux/missions';
 
 function MissionOne(props) {
   const {
@@ -11,50 +11,34 @@ function MissionOne(props) {
 
   const dispatch = useDispatch();
 
+  const toggleMission = () => {
+    dispatch(ToggleMission(id));
+  };
+
+  const btnText = reserved ? 'Leave Mission' : 'Join Mission';
+
   return (
     <>
       <tbody>
         <tr>
           <td className="name">{name}</td>
-          <td>{description}</td>
+          <td>
+            {description}
+          </td>
+          <span>
+            {!reserved && <span>not a member</span>}
+            {reserved && <span className="member">active member</span>}
+          </span>
           <td className="col-md-4">
-            {
-              reserved
-                ? (
-                  <span className="active">
-                    ACTIVE MEMBER
-                  </span>
-                )
-
-                : (
-                  <span className="not-active">
-                    NOT A MEMBER
-                  </span>
-                )
-            }
-            {
-              reserved
-                ? (
-                  <Button
-                    type="button"
-                    className="btn join"
-                    onClick={() => dispatch(joinMission(id))}
-                    variant="outline-secondary"
-                  >
-                    Join Mission
-                  </Button>
-                )
-                : (
-                  <button
-                    type="button"
-                    className="btn join"
-                    onClick={() => dispatch(leaveMission(id))}
-                    variant="outline-secondary"
-                  >
-                    Leave Mission
-                  </button>
-                )
-            }
+            <Button
+              type="button"
+              id={id}
+              className="btn join"
+              onClick={toggleMission}
+              variant="outline-secondary"
+            >
+              {btnText}
+            </Button>
           </td>
         </tr>
       </tbody>
