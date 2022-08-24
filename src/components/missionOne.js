@@ -21,10 +21,8 @@ function MissionOne(props) {
       <tr>
         <td className="name">{name}</td>
         <td>{description}</td>
-        <span>
-          {!reserved && <span>not a member</span>}
-          {reserved && <span className="member">active member</span>}
-        </span>
+        {!reserved && <span>not a member</span>}
+        {reserved && <span className="member">active member</span>}
         <td className="col-md-4">
           <Button
             type="button"
