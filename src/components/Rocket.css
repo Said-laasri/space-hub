@@ -1,4 +1,39 @@
+.rocket {
+  padding: 2rem;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
 .rocket-img {
-  width: 4rem;
-  height: 4rem;
+  width: 15rem;
+  height: 15rem;
+}
+
+.rocket-info {
+  text-align: start;
+  background-color: azure;
+}
+
+.rocket-info > h3 {
+  font-size: 1.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.rocket-info > p > span {
+  background-color: aquamarine;
+  margin: 0.4rem;
+  border-radius: 20%;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.rocket-info > button {
+  width: 10rem;
+  height: 3rem;
+  background-color: rgb(35, 82, 211);
+  color: rgb(255, 255, 255);
+  font-size: 0.9rem;
+  font-weight: 700;
+  font-family: 'Times New Roman', Times, serif;
+  border: none;
 }
