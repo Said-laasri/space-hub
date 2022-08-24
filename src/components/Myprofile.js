@@ -1,24 +1,30 @@
 import { useSelector } from 'react-redux';
+import { ListGroup } from 'react-bootstrap';
 
 function Myprofile() {
-  const profileParts = useSelector((state) => [
-    {
-      RocketTitle: 'My Missions',
-      data: state.missions.filter((mission) => mission.reserved),
-    },
-    {
-      RocketTitle: 'My Rockets',
-      data: state.rockets.filter((rocket) => rocket.reserved),
-    },
-  ]);
+  const missions = useSelector((state) => state.mission);
+  const Missions = missions.filter((mission) => mission.reserved);
+
+  const rockets = useSelector((state) => state.rocket);
+  const Rockets = rockets.filter((rocket) => rocket.reserved);
 
   return (
-    <div>
+    <div className="profile d-flex">
       <div className="misssion-joined">
-        <h4></h4>
+        <h4>Missions</h4>
+        <ListGroup>
+          {Missions.map((v) => (
+            <ListGroup.Item key={v.id}>{v.name}</ListGroup.Item>
+          ))}
+        </ListGroup>
       </div>
       <div className="rocket-reserved">
-        <h4></h4>
+        <h4>Rockets</h4>
+        <ListGroup>
+          {Rockets.map((v) => (
+            <ListGroup.Item key={v.id}>{v.name}</ListGroup.Item>
+          ))}
+        </ListGroup>
       </div>
     </div>
   );
