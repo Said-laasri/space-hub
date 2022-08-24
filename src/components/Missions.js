@@ -1,8 +1,8 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import Table from 'react-bootstrap/Table';
-import { getMission } from '../redux/missions';
-import MissionOne from '../missionOne';
+import { Table } from 'react-bootstrap';
+import { getMission } from '../redux/missions/missions';
+import MissionOne from './missionOne';
 
 function Missions() {
   const dispatch = useDispatch();
