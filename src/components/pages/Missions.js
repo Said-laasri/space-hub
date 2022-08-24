@@ -14,6 +14,13 @@ function Missions() {
 
   return (
     <Table striped bordered hover size="lg">
+      <thead>
+        <tr>
+          <th>Mission</th>
+          <th>Description</th>
+          <th>Status</th>
+        </tr>
+      </thead>
       {missions.map((mission) => (
         <MissionOne
           key={mission.id}
