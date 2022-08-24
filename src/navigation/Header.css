@@ -26,6 +26,7 @@
     -ms-transform: perspective(500px) rotateY(-42deg);
     -o-transform: perspective(500px) rotateY(-42deg);
   }
+
   50% {
     transform: perspective(500px) rotateY(0deg);
     -webkit-transform: perspective(500px) rotateY(0deg);
@@ -33,6 +34,7 @@
     -ms-transform: perspective(500px) rotateY(0deg);
     -o-transform: perspective(500px) rotateY(0deg);
   }
+
   100% {
     transform: perspective(500px) rotateY(-42deg);
     -webkit-transform: perspective(500px) rotateY(-42deg);
