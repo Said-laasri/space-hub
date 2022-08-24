@@ -1,5 +1,5 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import MISSION_API from '../missionApi/MISSION_API';
+import MISSION_API from '../../api/MISSION_API';
 
 const ADD_MISSION = 'spacehub/missions/ADD_MISSION';
 const TOGGLE_MISSION = 'spacehub/missions/TOGGLE_MISSION';

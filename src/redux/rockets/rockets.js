@@ -33,15 +33,23 @@ export const addRocket = (rocketItem) => ({
 });
 
 const getRockets = createAsyncThunk(ADD_ROCKET, async () => {
-  const feedBack = await fetch(ROCKET_API);
-  const data = await feedBack.json();
-  const rocketItem = data.map((rocket) => ({
-    id: rocket.id,
-    name: rocket.rocket_name,
-    description: rocket.description,
-    img: rocket.flickr_images[0],
-    reserved: false,
-  }));
+  const feedBack = await fetch(ROCKET_API, {
+    method: 'GET',
+    headers: { 'Content-Type': 'application/json' },
+  }).then((response) => response.json());
+  let rocketItem;
+  try {
+    const data = await feedBack;
+    rocketItem = data.map((rocket) => ({
+      id: rocket.id,
+      name: rocket.rocket_name,
+      description: rocket.description,
+      img: rocket.flickr_images[0],
+      reserved: false,
+    }));
+  } catch {
+    console.log('ERROR');
+  }
   return rocketItem;
 });
 
