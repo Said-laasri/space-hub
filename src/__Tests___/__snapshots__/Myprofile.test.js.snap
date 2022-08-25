@@ -5,7 +5,7 @@ exports[`renders correctly 1`] = `
   className="profile d-flex"
 >
   <div
-    className="misssion-joined"
+    className="mission-joined"
   >
     <h4>
       Missions

@@ -12,7 +12,7 @@ function Myprofile() {
   return (
     <div className="profile d-flex">
       <div className="mission-joined">
-        <h4 className="font">Missions</h4>
+        <h4>Missions</h4>
         <ListGroup>
           {Missions.map((v) => (
             <ListGroup.Item key={v.id}>
@@ -22,7 +22,7 @@ function Myprofile() {
         </ListGroup>
       </div>
       <div className="rocket-reserved">
-        <h4 className="font">Rockets</h4>
+        <h4>Rockets</h4>
         <ListGroup>
           {Rockets.map((v) => (
             <ListGroup.Item key={v.id}>
