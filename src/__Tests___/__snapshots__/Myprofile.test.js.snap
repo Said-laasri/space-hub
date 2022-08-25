@@ -5,26 +5,30 @@ exports[`renders correctly 1`] = `
   className="profile d-flex"
 >
   <div
-    className="mission-joined"
+    className="misssion-joined2"
   >
-    <h4>
-      Missions
-    </h4>
     <div
-      className="list-group"
-      onKeyDown={[Function]}
-    />
-  </div>
-  <div
-    className="rocket-reserved"
-  >
-    <h4>
-      Rockets
-    </h4>
+      className="mission-joined"
+    >
+      <h4>
+        Missions
+      </h4>
+      <div
+        className="list-group"
+        onKeyDown={[Function]}
+      />
+    </div>
     <div
-      className="list-group"
-      onKeyDown={[Function]}
-    />
+      className="rocket-reserved"
+    >
+      <h4>
+        My Rockets
+      </h4>
+      <div
+        className="list-group"
+        onKeyDown={[Function]}
+      />
+    </div>
   </div>
 </div>
 `;

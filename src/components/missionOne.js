@@ -17,27 +17,28 @@ function MissionOne(props) {
 
   const btnText = reserved ? 'Leave Mission' : 'Join Mission';
   return (
-    <tbody>
-      <tr>
-        <td className="name">{name}</td>
-        <td>{description}</td>
-        <span>
-          {!reserved && <span>not a member</span>}
-          {reserved && <span className="member">active member</span>}
-        </span>
-        <td className="col-md-4">
+    <div className="body-mis">
+      <article>
+        <h2 className="name">{name}</h2>
+        <p className="description">{description}</p>
+        <div className="buttonS">
+          <button type="button" className="span">
+            {!reserved && 'NOT A MEMBER'}
+            {reserved && 'Active member'}
+          </button>
+        </div>
+        <div className="btn-right">
           <Button
             type="button"
             id={id}
             className="btn join"
             onClick={toggleMission}
-            variant="outline-secondary"
           >
             {btnText}
           </Button>
-        </td>
-      </tr>
-    </tbody>
+        </div>
+      </article>
+    </div>
   );
 }
 

@@ -1,21 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<table
-  className="table table-lg table-striped table-bordered table-hover"
+<div
+  className="table-responsive"
 >
-  <thead>
-    <tr>
-      <th>
-        Mission
-      </th>
-      <th>
-        Description
-      </th>
-      <th>
-        Status
-      </th>
-    </tr>
-  </thead>
-</table>
+  <table
+    className="table table-striped table-bordered table-hover"
+  >
+    <div
+      className="theader"
+    >
+      <div
+        className="ul"
+      >
+        <p
+          className="mi"
+        >
+          Mission
+        </p>
+        <p
+          className="de"
+        >
+          Description
+        </p>
+        <p
+          className="st"
+        >
+          Status
+        </p>
+      </div>
+    </div>
+  </table>
+</div>
 `;

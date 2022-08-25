@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="links d-flex"
+  className="links d-flex2"
 >
   <a
     activeClassName="active"
@@ -21,7 +21,7 @@ exports[`renders correctly 1`] = `
     Missions
   </a>
   <a
-    className="profile nav"
+    className="profile2 nav"
     href="/Myprofile"
     onClick={[Function]}
   >

@@ -4,14 +4,14 @@ import './Nav.css';
 
 function Nav() {
   return (
-    <div className="links d-flex">
+    <div className="links d-flex2">
       <NavLink to="/" className="rockets nav" activeClassName="active">
         Rockets
       </NavLink>
       <NavLink to="Mission" className="missions nav">
         Missions
       </NavLink>
-      <NavLink to="Myprofile" className="profile nav">
+      <NavLink to="Myprofile" className="profile2 nav">
         My Profile
       </NavLink>
     </div>
