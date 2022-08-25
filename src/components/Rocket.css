@@ -37,3 +37,8 @@
   font-family: 'Times New Roman', Times, serif;
   border: none;
 }
+
+.rocket-info > button:hover {
+  background-color: rgb(163, 163, 201);
+  color: rgba(24, 21, 21, 0.651);
+}
