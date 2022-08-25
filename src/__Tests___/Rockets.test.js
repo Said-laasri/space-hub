@@ -20,7 +20,7 @@ it('renders correctly', () => {
           />
         </BrowserRouter>
       </Provider>
-    </React.StrictMode>
+    </React.StrictMode>,
   ).toJSON();
   expect(tree).toMatchSnapshot();
 });

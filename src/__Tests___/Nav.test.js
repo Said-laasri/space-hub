@@ -13,7 +13,7 @@ it('renders correctly', () => {
           <Nav />
         </BrowserRouter>
       </Provider>
-    </React.StrictMode>
+    </React.StrictMode>,
   ).toJSON();
   expect(tree).toMatchSnapshot();
 });

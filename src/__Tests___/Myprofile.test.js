@@ -13,7 +13,7 @@ it('renders correctly', () => {
           <Myprofile />
         </BrowserRouter>
       </Provider>
-    </React.StrictMode>
+    </React.StrictMode>,
   ).toJSON();
   expect(tree).toMatchSnapshot();
 });
