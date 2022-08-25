@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="links d-flex2"
+>
+  <a
+    activeClassName="active"
+    aria-current="page"
+    className="rockets nav active"
+    href="/"
+    onClick={[Function]}
+  >
+    Rockets
+  </a>
+  <a
+    className="missions nav"
+    href="/Mission"
+    onClick={[Function]}
+  >
+    Missions
+  </a>
+  <a
+    className="profile2 nav"
+    href="/Myprofile"
+    onClick={[Function]}
+  >
+    My Profile
+  </a>
+</div>
+`;
