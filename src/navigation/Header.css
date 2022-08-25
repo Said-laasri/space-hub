@@ -1,18 +1,20 @@
 .header {
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 1rem;
-  margin-left: 10rem;
-  margin-right: 1rem;
+  background-color: azure;
+  gap: 21rem;
 }
 
 .logo-container {
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
 }
 
 .logo {
-  width: 5rem;
-  height: 5rem;
-  margin-left: -10rem;
+  width: 4rem;
+  height: 4rem;
+  animation-name: rotate-windows;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }

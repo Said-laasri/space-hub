@@ -21,9 +21,9 @@ function MissionOne(props) {
       <article>
         <h2 className="name">{name}</h2>
         <p className="description">{description}</p>
-        <div className="span">
-          <button type="button" className="btn btn-primary">
-            {!reserved && 'Not a member'}
+        <div className="buttonS">
+          <button type="button" className="span">
+            {!reserved && 'NOT A MEMBER'}
             {reserved && 'Active member'}
           </button>
         </div>
