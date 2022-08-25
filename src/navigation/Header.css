@@ -1,6 +1,7 @@
 .header {
   justify-content: space-around;
   align-items: center;
+  background-color: azure;
 }
 
 .logo-container {
@@ -9,7 +10,68 @@
 }
 
 .logo {
-  width: 5rem;
-  height: 5rem;
-  margin-left: -10rem;
+  width: 4rem;
+  height: 4rem;
+  animation-name: rotate-windows;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotate-windows {
+  0% {
+    transform: perspective(500px) rotateY(-42deg);
+    -webkit-transform: perspective(500px) rotateY(-42deg);
+    -moz-transform: perspective(500px) rotateY(-42deg);
+    -ms-transform: perspective(500px) rotateY(-42deg);
+    -o-transform: perspective(500px) rotateY(-42deg);
+  }
+
+  50% {
+    transform: perspective(500px) rotateY(0deg);
+    -webkit-transform: perspective(500px) rotateY(0deg);
+    -moz-transform: perspective(500px) rotateY(0deg);
+    -ms-transform: perspective(500px) rotateY(0deg);
+    -o-transform: perspective(500px) rotateY(0deg);
+  }
+
+  100% {
+    transform: perspective(500px) rotateY(-42deg);
+    -webkit-transform: perspective(500px) rotateY(-42deg);
+    -moz-transform: perspective(500px) rotateY(-42deg);
+    -ms-transform: perspective(500px) rotateY(-42deg);
+    -o-transform: perspective(500px) rotateY(-42deg);
+  }
+}
+
+.logo-container > h1 {
+  font-size: 2rem;
+  color: rgb(86, 161, 0);
+}
+
+.logo-container > h1:hover {
+  animation-duration: 2s;
+  animation-name: logo;
+}
+
+@keyframes logo {
+  0% {
+    color: red;
+  }
+
+  25% {
+    color: rgb(255, 115, 0);
+  }
+
+  50% {
+    color: yellow;
+  }
+
+  75% {
+    color: rgb(51, 255, 0);
+  }
+
+  100% {
+    color: blue;
+  }
 }

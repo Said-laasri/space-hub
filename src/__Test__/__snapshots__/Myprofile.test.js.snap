@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Missions profile should render profile 1`] = `
+Object {
+  "items": Array [
+    Object {
+      "description": "Myprofile",
+      "title": "Myprofile",
+    },
+  ],
+  "title": "Myprofile",
+}
+`;

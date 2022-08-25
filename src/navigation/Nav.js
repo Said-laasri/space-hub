@@ -1,19 +1,19 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import React from 'react';
 import './Nav.css';
 
 function Nav() {
   return (
     <div className="links d-flex">
-      <Link to="/" className="reckets">
+      <NavLink to="/" className="rockets nav" activeClassName="active">
         Rockets
-      </Link>
-      <Link to="Mission" className="missions">
+      </NavLink>
+      <NavLink to="Mission" className="missions nav">
         Missions
-      </Link>
-      <Link to="Myprofile" className="profile">
+      </NavLink>
+      <NavLink to="Myprofile" className="profile nav">
         My Profile
-      </Link>
+      </NavLink>
     </div>
   );
 }

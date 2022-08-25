@@ -1,5 +1,5 @@
 import Nav from './Nav';
-import planet from '../images/planet.png';
+import planet from '../images/planet1.png';
 import './Header.css';
 
 function Header() {

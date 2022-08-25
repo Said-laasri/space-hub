@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux';
 import { ListGroup } from 'react-bootstrap';
+import './Myprofile.css';
 
 function Myprofile() {
   const missions = useSelector((state) => state.mission);
@@ -10,11 +11,13 @@ function Myprofile() {
 
   return (
     <div className="profile d-flex">
-      <div className="misssion-joined">
+      <div className="mission-joined">
         <h4>Missions</h4>
         <ListGroup>
           {Missions.map((v) => (
-            <ListGroup.Item key={v.id}>{v.name}</ListGroup.Item>
+            <ListGroup.Item key={v.id}>
+              <h5>{v.name}</h5>
+            </ListGroup.Item>
           ))}
         </ListGroup>
       </div>
@@ -22,7 +25,9 @@ function Myprofile() {
         <h4>Rockets</h4>
         <ListGroup>
           {Rockets.map((v) => (
-            <ListGroup.Item key={v.id}>{v.name}</ListGroup.Item>
+            <ListGroup.Item key={v.id}>
+              <h5>{v.name}</h5>
+            </ListGroup.Item>
           ))}
         </ListGroup>
       </div>
