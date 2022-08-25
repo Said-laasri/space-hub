@@ -11,7 +11,7 @@ function Nav() {
       <Link to="Mission" className="missions">
         Missions
       </Link>
-      <Link to="Myprofile" className="profile">
+      <Link to="Myprofile" className="profiles">
         My Profile
       </Link>
     </div>

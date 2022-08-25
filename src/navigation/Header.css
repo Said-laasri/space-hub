@@ -1,10 +1,13 @@
 .header {
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 1rem;
+  margin-left: 10rem;
+  margin-right: 1rem;
 }
 
 .logo-container {
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
 }
 
