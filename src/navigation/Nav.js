@@ -10,13 +10,8 @@ function Nav() {
       </NavLink>
       <NavLink to="Mission" className="missions nav">
         Missions
-<<<<<<< HEAD
-      </Link>
-      <Link to="Myprofile" className="profiles">
-=======
       </NavLink>
       <NavLink to="Myprofile" className="profile nav">
->>>>>>> dev
         My Profile
       </NavLink>
     </div>
