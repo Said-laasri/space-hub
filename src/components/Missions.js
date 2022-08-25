@@ -4,12 +4,17 @@ import Table from 'react-bootstrap/Table';
 import { getMission } from '../redux/missions/missions';
 import MissionOne from './missionOne';
 
+let isInitial = true;
+
 function Missions() {
   const dispatch = useDispatch();
   const missions = useSelector((state) => state.mission);
 
   useEffect(() => {
-    dispatch(getMission());
+    if (isInitial) {
+      dispatch(getMission());
+      isInitial = false;
+    }
   }, [dispatch]);
 
   return (

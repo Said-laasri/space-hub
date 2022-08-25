@@ -3,12 +3,17 @@ import { useEffect } from 'react';
 import { getRockets } from '../redux/rockets/rockets';
 import Rocket from './Rocket';
 
+let isInitial = true;
+
 function Rockets() {
   const dispatch = useDispatch();
   const rockets = useSelector((state) => state.rocket);
 
   useEffect(() => {
-    dispatch(getRockets());
+    if (isInitial) {
+      dispatch(getRockets());
+      isInitial = false;
+    }
   }, [dispatch]);
 
   return (
