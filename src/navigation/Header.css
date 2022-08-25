@@ -1,10 +1,7 @@
-/* stylelint-disable indentation */
-/* stylelint-disable CssSyntaxError */
 .header {
   justify-content: space-around;
   align-items: center;
   background-color: azure;
-  gap: 21rem;
 }
 
 .logo-container {
@@ -76,5 +73,5 @@
 
   100% {
     color: blue;
-}
+  }
 }

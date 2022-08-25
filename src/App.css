@@ -118,24 +118,40 @@ article {
 
 .profile {
   display: flex;
-  justify-content: space-evenly;
   margin-left: 5rem;
   margin-right: 5rem;
+  padding-top: 2rem;
 }
 
-.misssion-joined,
 .rocket-reserved {
   display: flex;
   flex-direction: column;
   width: 40%;
 }
 
+.misssion-joined2 {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  gap: 10rem;
+}
+
+.misssion-joined {
+  display: flex;
+  width: 50%;
+}
+
 .list-group {
   border: 1px solid lightgray;
+  width: 20rem;
 }
 
 .list-group-item {
   display: flex;
   padding: 1rem;
   border-bottom: 1px solid lightgray;
+}
+
+.d-flex2 {
+  display: flex;
 }

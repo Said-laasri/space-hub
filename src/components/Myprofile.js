@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
 import { ListGroup } from 'react-bootstrap';
-import './Myprofile.css';
+/* import './Myprofile.css'; */
 
 function Myprofile() {
   const missions = useSelector((state) => state.mission);
@@ -11,8 +11,7 @@ function Myprofile() {
 
   return (
     <div className="profile d-flex">
-      <div className="misssion-joined">
-        <h4>My Missions</h4>
+      <div className="misssion-joined2">
         <div className="mission-joined">
           <h4>Missions</h4>
           <ListGroup>
