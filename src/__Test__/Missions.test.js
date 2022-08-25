@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import '@testing-library/jest-dom/extend-expect.js';
+import '@testing-library/jest-dom/extend-expect';
 import { Provider } from 'react-redux';
 import store from '../redux/configueStore';
 import Missions from '../components/Missions';
@@ -13,15 +13,11 @@ describe('Missions', () => {
       description: 'Missions Description',
       joined: false,
     };
-    const missions = render (
+    const missions = render(
       <Provider store={store}>
         <Missions mission={mission} reserved={mission.reserved} />
-      </Provider>
-      );
-      expect(missions).toMatchSnapshot();
-      });
-      });
-
-
-
-
+      </Provider>,
+    );
+    expect(missions).toMatchSnapshot();
+  });
+});
