@@ -5,9 +5,7 @@ import { toggleReserved } from '../redux/rockets/rockets';
 import './Rocket.css';
 
 function Rocket(props) {
-  const {
-    id, name, description, img, reserved,
-  } = props;
+  const { id, name, description, img, reserved } = props;
 
   const dispatch = useDispatch();
 
