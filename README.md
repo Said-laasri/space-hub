@@ -42,7 +42,7 @@ space hub website is a page that contains information about all space missions a
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://techie-emma.netlify.app/)
+- [Live Demo Link](http://space-hub-eight.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
