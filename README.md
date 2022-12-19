@@ -1,55 +1,96 @@
-# Project Name
+# 📗 Table of Contents
 
-Space hub
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 Exotic Rentals ](#-exotic-rentals--)
+  - [Backend](#backend)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+    - [Deployment](#deployment)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
-# Description the project.
+# 📖 space hub <a name="about-project"></a>
 
 space hub website is a page that contains information about all space missions and rocket used to travel in space . and also you can joing any mission and reserve any rocket availabale for the mission
 
-## Built With
+## 🛠 Built With <a name="built-with"></a>
 
-- html/css/booststrap/js/React/redux/API.
-- following linters standards.
-- following github flows standards.
+### Tech Stack <a name="tech-stack"></a>
 
-## Getting Started
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://nextjs.org/">NextJS</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="https://aos.com/">AOS Animations</a></li>
+    <li><a href="https://remixicon.com/">Remix Icon</a></li>
+  </ul>
+</details>
 
-** space hub created with React**
+## 🚀 Live Demo <a name="live-demo"></a>
 
----
+- [Live Demo Link](https://techie-emma.netlify.app/)
 
-To get a local copy up and running follow these simple example steps.
-follow>>>>>>>>>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Clone the Space hub App
+## 💻 Getting Started <a name="getting-started"></a>
 
-to use the project Space hub please follow :
+To get a local copy up and running, follow these steps.
 
-- Open GitHub and go to my GitHub repository name:Space hub clone.
+### Prerequisites
 
-- Click “Code” and copy the given URL.
+In order to run this project you need:
 
-- Open “Git Bash” and change the current working directory to the location where you want the cloned directory.
+### Setup
 
-- Type git clone in the terminal, paste the URL you copied earlier, and press “enter” to create your local clone.
+Clone this repository to your desired folder:
 
-> Syntax:
+```sh
+  cd my-folder
+  git clone git@github.com
+```
 
-$ git clone {repository URL}
+### Install
 
-### Run Space hub app on your local machine
+Install this project with:
 
-> open your directory Space hub-react/
+```sh
+  cd nicholas-portfolio
+  yarn install
+```
 
-## \_use vs-code or any IDE to view code .
+### Usage
 
-$ npm install
+To run the project, execute the following command:
 
-then
+```sh
+  npm run dev
+```
 
-$ npm start
+### Deployment
 
-<hr>
+You can deploy this project using:
+
+```sh
+  git push main
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 👥 Author <a name="author"></a>
 
 ## Authors
 
@@ -65,21 +106,38 @@ $ npm start
 - Twitter: [@ujvari65](https://twitter.com/ujvari65)
 - LinkedIn: [Aleksandra (Digital Marketing A3D) Ujvari](https://www.linkedin.com/in/aleksandra-ujvari-85235a210/)
 
-## 🤝 Contributing
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **I will add a feature for a new project.**
+- [ ] **I will add some animations.**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
-thanks:
 
-## Show your support
+Feel free to check the [issues page](../../issues/).
 
-Give a ⭐️ if you like this project!
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Acknowledgments
+## ⭐️ Show your support <a name="support"></a>
 
-- Microverse
-- Inspiration
-- etc
+If you like this project consider giving it a star ⭐️.
 
-## 📝 License
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank Microverse for giving me the opportunity to work on this project.
+
+- LazyCoders
+- Coding Partners
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
