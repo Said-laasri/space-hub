@@ -23,7 +23,7 @@
 
 # 📖 space hub <a name="about-project"></a>
 
-space hub website is a page that contains information about all space missions and rocket used to travel in space . and also you can joing any mission and reserve any rocket availabale for the mission
+Space hub website is a page that contains information about all space missions and rocket used to travel in space . and also you can joing any mission and reserve any rocket availabale for the mission
 
 ## 🛠 Built With <a name="built-with"></a>
 
