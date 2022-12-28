@@ -33,10 +33,9 @@ Space hub website is a page that contains information about all space missions a
   <summary>Client</summary>
   <ul>
     <li><a href="https://reactjs.org/">React.js</a></li>
-    <li><a href="https://nextjs.org/">NextJS</a></li>
     <li><a href="#">CSS</a></li>
-    <li><a href="https://aos.com/">AOS Animations</a></li>
-    <li><a href="https://remixicon.com/">Remix Icon</a></li>
+    <li><a href="https://aos.com/">HTML</a></li>
+    <li><a href="https://remixicon.com/">API</a></li>
   </ul>
 </details>
 
